@@ -1,0 +1,21 @@
+{
+  "name": "csv-locale-json",
+  "version": "1.0.0",
+  "description": "Really simple script to fetch a csv (easily hosted by google spreadsheet) and export them as locale json (locale per file)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "csv-parse": "^4.16.0",
+    "node-fetch": "^2.6.1"
+  },
+  "bin": {
+    "csv-to-locale-json": "index.js"
+  },
+  "dependencies": {
+    "commander": "^8.0.0"
+  }
+}
