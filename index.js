@@ -29,7 +29,7 @@ const fetch = require("node-fetch");
     }, {});
   };
   const headers = records.shift();
-  const langs = headers.slice(1);
+  const langs = headers.slice(1).filter(f=>f.indexOf('_')!=0 );
   let db = {};
   langs.forEach((lang) => {
     db[lang] = {};
