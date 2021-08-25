@@ -8,13 +8,10 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "csv-parse": "^4.16.0",
-    "node-fetch": "^2.6.1"
-  },
   "bin": "index.js",
   "dependencies": {
     "commander": "^8.0.0",
+    "csv-parse": "^4.16.0",
     "node-fetch": "^2.6.1"
   }
 }
