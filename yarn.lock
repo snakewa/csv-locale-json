@@ -2,15 +2,14 @@
 # yarn lockfile v1
 
 
-"commander@^8.0.0":
-  "integrity" "sha512-Xvf85aAtu6v22+E5hfVoLHqyul/jyxh91zvqk/ioJTQuJR7Z78n7H558vMPKanPSRgIEeZemT92I2g9Y8LPbSQ=="
-  "resolved" "https://registry.npmjs.org/commander/-/commander-8.0.0.tgz"
-  "version" "8.0.0"
+commander@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-8.0.0.tgz"
 
-"csv-parse@^4.16.0":
-  "resolved" "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.16.0.tgz"
-  "version" "4.16.0"
+csv-parse@^4.16.0:
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.16.0.tgz#b4c875e288a41f7ff917cb0d7d45880d563034f6"
 
-"node-fetch@^2.6.1":
-  "resolved" "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz"
-  "version" "2.6.1"
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
