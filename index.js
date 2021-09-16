@@ -46,13 +46,14 @@ const fetch = require("node-fetch");
   langs.forEach((lang) => {
     if(filterLangs && filterLangs.indexOf(lang)===-1 ) {
       console.log(`skip ${target}...`);  
-      continue;
+    }else{
+      const target = `${options.output}/${lang}.json`;
+      console.log(`saving ${target}...`);
+      fs.writeFile(
+        target,
+        JSON.stringify(db[lang], "", 2)
+      );
     }
-    const target = `${options.output}/${lang}.json`;
-    console.log(`saving ${target}...`);
-    fs.writeFile(
-      target,
-      JSON.stringify(db[lang], "", 2)
-    );
+   
   });
 })();
