@@ -8,7 +8,8 @@ const fetch = require("node-fetch");
   program.version("0.0.1");
   program
     .option("-d, --debug", "output extra debugging")
-    .requiredOption("-u, --csv-url <url>", "csv url")
+    .option("-l, --langs <langs>", "langs list seperated by ,")
+    .requiredOption("-u, --csv-url <url>", "csv url")    
     .requiredOption("-o, --output <output>", "output folder");
   program.parse(process.argv);
   const options = program.opts();
@@ -41,7 +42,12 @@ const fetch = require("node-fetch");
       db[lang][key] = data[lang];
     });
   });
+  let filterLangs = options.langs ? options.langs.split(',') : false;
   langs.forEach((lang) => {
+    if(filterLangs && filterLangs.indexOf(lang)===-1 ) {
+      console.log(`skip ${target}...`);  
+      continue;
+    }
     const target = `${options.output}/${lang}.json`;
     console.log(`saving ${target}...`);
     fs.writeFile(
